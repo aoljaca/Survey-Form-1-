@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> This is the survey form project for Free Code Camp.</p>
+  </header>
+  <main id="main">
+    <form id="survey-form">
+      <fieldset>
+          <div class="div">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="div">
+              <label id="email-label" for="email">Email</label>
+              <input id="email" type="email" placeholder="Enter email address" required>
+        </div>
+        <div class="div">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input id="number" type="number" min="1" max="180" placeholder="Enter your age">
+        </div>
+        <div class="div">
+            <label for="dropdown">Which route did you take to learn how to code?</label>
+            <select id="dropdown">
+              <option value="1">School</option>
+              <option value="2">Coding-Bootcamp</option>
+              <option value="3">Self-Taught</option>
+              <option value="4">Mix</option>
+            </select>
+          </div>
+          <div class="div">
+            <label for="radio">What is your favorite coding language?</label>
+            <input id="radio" type="radio" name="coding-language" value="Java">
+            <label for="radio">Java</label>
+            <input id="radio-choice2" type="radio" name="coding-language" value="python">
+            <label for="radio-choice2">Python</label>
+            <input id="radio-choice3" type="radio" name="coding-language" value="HTML">
+            <label for="radio-choice3">HTML</label>
+            <input id="radio-choice4" type="radio" name="coding-language" value="Other">
+            <label for="radio-choice3">Other</label>
+          </div>
+        <div class="div">
+            <label for="checkbox">Do you enjoy coding?</label>
+            <input id="checkbox" type="checkbox" name="yes" value="yes">
+            <label for="checkbox">Yes</label>
+            <input id="no" type="checkbox" name="no" value="no">
+            <label for="no">No</label>
+          </div>
+        <div class="div">
+            <label for="favorite-program">What was was the most fun program you have written?</label><br>
+            <textarea id="favorite-program" name="favorite-program" rows="5" cols="33">
+              </textarea>
+          </div>
+        <div class="submit">
+            <input id="submit" name="submit" type="submit" value=Submit>
+          </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
